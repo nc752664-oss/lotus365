@@ -41,9 +41,9 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll > 100) {
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
+        navbar.style.boxShadow = '0 4px 20px rgba(15, 130, 97, 0.3)';
     } else {
-        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        navbar.style.boxShadow = '0 2px 10px rgba(15, 130, 97, 0.2)';
     }
     
     lastScroll = currentScroll;
@@ -159,7 +159,7 @@ const validateForm = (form) => {
     inputs.forEach(input => {
         if (!input.value.trim()) {
             isValid = false;
-            input.style.borderColor = '#ff6b35';
+            input.style.borderColor = '#0F8261';
         } else {
             input.style.borderColor = '#e0e0e0';
         }
